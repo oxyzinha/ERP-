@@ -11,5 +11,8 @@
   ],
   "assets": {
     "directory": "dist/client"
+  },
+  "alias": {
+    "tslib": "node_modules/tslib/tslib.es6.mjs"
   }
 }
