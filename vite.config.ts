@@ -4,9 +4,6 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
-  build: {
-    rollupOptions: {
-      input: './index.html'
-    }
-  }
+  // Removemos o build.rollupOptions.input manualmente
+  // Deixa o Vinxi decidir o ponto de entrada
 });
