@@ -1,9 +1,15 @@
 {
+  "version": 2,
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/client",
-  "framework": null,
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/api/index"
+    }
+  ],
   "functions": {
-    "dist/server/index.mjs": {
+    "api/index.js": {
       "runtime": "nodejs22.x"
     }
   }
