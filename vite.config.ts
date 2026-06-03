@@ -4,10 +4,4 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
-  nitro: {
-    preset: "cloudflare-module",
-    rollupConfig: {
-      external: [],
-    },
-  },
 });
