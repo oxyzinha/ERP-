@@ -1,7 +1,6 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
 export default defineConfig({
-  tanstackStart: {
-    server: { entry: "server" },
-  },
+  // Não adiciones 'server: { entry: ... }' aqui. 
+  // O Lovable já faz isso automaticamente.
 });
