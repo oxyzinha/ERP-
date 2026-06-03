@@ -1,6 +1,12 @@
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  // Não adiciones 'server: { entry: ... }' aqui. 
-  // O Lovable já faz isso automaticamente.
+  plugins: [react(), tsconfigPaths()],
+  build: {
+    rollupOptions: {
+      input: './index.html'
+    }
+  }
 });
